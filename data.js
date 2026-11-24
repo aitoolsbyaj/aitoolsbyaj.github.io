@@ -49,12 +49,54 @@ const portfolioData = {
     description: "A web-based application for analysing school examination result workbooks and generating structured performance reports. Users can upload supported Excel workbooks and download an analysis workbook when the relevant analysis workflow is available.",
     url: "https://doe-exam-analysis.streamlit.app/" // Paste your Streamlit app URL here before publishing.
   },
-  projects: [
-    { title: "COVID-19 Analysis — India", period: "March 2021 – June 2021", description: "A Python GUI-based desktop application developed with Tkinter, Pandas, NumPy, Matplotlib, Seaborn and Plotly to explore COVID-19 case information." },
-    { title: "Rainfall Trend Analysis — Indian Monsoon", period: "January 2021 – March 2021", description: "Analysed rainfall patterns over 116 years (1901–2016) and used a Decision Tree algorithm to classify years as drought, flood or normal." },
-    { title: "Academic ERP — VidyaOne", period: "July 2013 – June 2015", description: "Worked as software developer and team lead on an ERP solution supporting academic activities and performance monitoring for 3,000+ students and 150+ faculty." },
-    { title: "E-commerce development projects", period: "2015 – 2018", description: "Contributed to B2B/B2C e-commerce solutions for clients including Flexsteel, Spectrum Brands, Karma US Motors and Ivoclar Vivadent using SAP Hybris." }
-  ],
+ 
+projects: [
+  {
+    title: "COVID-19 Analysis — India",
+    category: "Data Science",
+    period: "March 2021 – June 2021",
+    description: "A Python GUI-based desktop application developed to explore COVID-19 case information and visualize trends.",
+    technologies: ["Python", "Tkinter", "Pandas", "NumPy", "Matplotlib", "Plotly"],
+    url: "",
+    github: ""
+  },
+  {
+    title: "Rainfall Trend Analysis — Indian Monsoon",
+    category: "Machine Learning",
+    period: "January 2021 – March 2021",
+    description: "Analysed rainfall patterns over 116 years (1901–2016) and used a Decision Tree algorithm to classify years as drought, flood or normal.",
+    technologies: ["Python", "Pandas", "Decision Tree", "Data Visualization"],
+    url: "",
+    github: ""
+  },
+  {
+    title: "Academic ERP — VidyaOne",
+    category: "Enterprise Software",
+    period: "July 2013 – June 2015",
+    description: "Worked as software developer and team lead on an ERP solution supporting academic activities and performance monitoring for 3,000+ students and 150+ faculty.",
+    technologies: ["Software Development", "ERP"],
+    url: "",
+    github: ""
+  },
+  {
+    title: "E-commerce Development Projects",
+    category: "Enterprise Development",
+    period: "2015 – 2018",
+    description: "Contributed to B2B/B2C e-commerce solutions for Flexsteel, Spectrum Brands, Karma US Motors and Ivoclar Vivadent using SAP Hybris.",
+    technologies: ["SAP Hybris", "Java", "E-commerce"],
+    url: "",
+    github: ""
+  },
+  {
+    title: "My New Project",
+    category: "Artificial Intelligence",
+    period: "2026",
+    description: "Write your project description here.",
+    technologies: ["Python", "AI", "Machine Learning"],
+    url: "https://example.com",
+    github: "https://github.com/your-repository"
+  }
+],
   certifications: [
     { title: "Generative AI for Educator Certificate", provider: "Google" },
     { title: "AI for Educators", provider: "IITM Pravartak — SWAYAM Plus" },
