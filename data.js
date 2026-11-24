@@ -11,25 +11,24 @@ const portfolioData = {
   aboutLead: "Connecting computer science, practical software development and meaningful learning experiences.",
   about: "I work at the intersection of computer science education and technology. My professional journey includes teaching and mentoring learners, developing software solutions, working with data-driven projects and exploring the role of artificial intelligence in education. I am interested in building practical tools that support teaching, learning, research and institutional workflows.",
   location: "Delhi, India",
-  email: "jain.aashish2.n@gmail.com",
+  email: "aitoolsbyaj@gmail.com",
   linkedin: "https://www.linkedin.com/in/learneraj",
   github: "https://github.com/aitoolsbyaj",
   cvUrl: "", // Optional: upload a public CV PDF to assets/documents/ and enter its path, e.g. "assets/documents/Aashish_Jain_CV.pdf"
   streamlitUrl: "", // Add your live DOE Examination Result Analysis app URL here.
   skills: ["Computer Science Education", "Python", "Java", "HTML", "Data Science", "Machine Learning", "Generative AI", "e-Learning", "Software Development", "Content Writing", "MS Office"],
   experience: [
-    { role: "Computer Science Teacher", organisation: "Directorate of Education, Government of NCT of Delhi", period: "Current role — add joining date", place: "Delhi, India", description: "Teaching computer science and supporting technology-enabled learning. Add specific responsibilities, classes and achievements here." },
     { role: "Freelance Developer", organisation: "Freelance", period: "July 2018 – Present (as listed in CV)", place: "Delhi, India", description: "Works with users and project teams to understand requirements, develop applications and deliver software solutions." },
     { role: "Computer Science Educator", organisation: "Freelance", period: "July 2018 – Present (as listed in CV)", place: "Delhi, India", description: "Taught computer science concepts, supported student training and developed programming skills in Python, Java and HTML." },
     { role: "Associate Technical Consultant", organisation: "KPIT Technologies Ltd.", period: "June 2015 – July 2018", place: "Noida, Uttar Pradesh, India", description: "Contributed to B2B and B2C e-commerce solutions, coordinated with project teams and trained colleagues on SAP Hybris technologies." },
     { role: "Assistant Professor | Software Developer", organisation: "Vidya College of Engineering", period: "August 2011 – June 2015", place: "Meerut, Uttar Pradesh, India", description: "Taught and mentored students, guided computer science projects and developed/monitored an ERP system serving 3,000+ students and 150+ faculty members." }
   ],
   education: [
-    { qualification: "Master’s in Computer Science", institution: "Add institution name", period: "Add years", detail: "Add percentage/grade if you wish to display it." },
-    { qualification: "Master’s in Education", institution: "Add institution name", period: "Add years", detail: "Add percentage/grade if you wish to display it." },
-    { qualification: "Post Graduate Diploma in Data Science and Statistics", institution: "Symbiosis Centre for Distance Learning", period: "2019 – 2021", detail: "86%" },
-    { qualification: "Post Graduate Diploma in Computer Applications", institution: "Swami Vivekanand Subharti University", period: "2019 – 2020", detail: "67%" },
-    { qualification: "B.Tech in Computer Science and Engineering", institution: "Uttar Pradesh Technical University", period: "2007 – 2011", detail: "74.5%" }
+    { qualification: "Master’s in Computer Science", institution: "Kurukshetra University, Kurukshetra, India", period: "2024-26", detail: "First Division" },
+    { qualification: "Master’s in Education", institution: "Subharti University, Meerut, India", period: "2022-24", detail: "First Division" },
+    { qualification: "Post Graduate Diploma in Data Science and Statistics", institution: "Symbiosis Centre for Distance Learning", period: "2019 – 2021", detail: "Hons." },
+    { qualification: "Post Graduate Diploma in Computer Applications", institution: "Swami Vivekanand Subharti University", period: "2019 – 2020", detail: "First Division" },
+    { qualification: "B.Tech in Computer Science and Engineering", institution: "Uttar Pradesh Technical University", period: "2007 – 2011", detail: "First Division" }
   ],
   publications: [
     { title: "Machine Learning based Comprehensive Analysis of COVID-19 and its Vaccination in India", journal: "Indian Journal of Natural Sciences", date: "June 2023", doi: "" },
@@ -41,7 +40,7 @@ const portfolioData = {
   featuredProject: {
     title: "DOE Examination Result Analysis",
     description: "A web-based application for analysing school examination result workbooks and generating structured performance reports. Users can upload supported Excel workbooks and download an analysis workbook when the relevant analysis workflow is available.",
-    url: "" // Paste your Streamlit app URL here before publishing.
+    url: "https://doe-exam-analysis.streamlit.app/" // Paste your Streamlit app URL here before publishing.
   },
   projects: [
     { title: "COVID-19 Analysis — India", period: "March 2021 – June 2021", description: "A Python GUI-based desktop application developed with Tkinter, Pandas, NumPy, Matplotlib, Seaborn and Plotly to explore COVID-19 case information." },
