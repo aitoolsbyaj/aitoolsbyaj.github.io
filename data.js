@@ -18,8 +18,9 @@ const portfolioData = {
   streamlitUrl: "", // Add your live DOE Examination Result Analysis app URL here.
   skills: ["Computer Science Education", "Python", "Java", "HTML", "Data Science", "Machine Learning", "Generative AI", "e-Learning", "Software Development", "Content Writing", "MS Office"],
   experience: [
-    { role: "Freelance Developer", organisation: "Freelance", period: "July 2018 – Present (as listed in CV)", place: "Delhi, India", description: "Works with users and project teams to understand requirements, develop applications and deliver software solutions." },
-    { role: "Computer Science Educator", organisation: "Freelance", period: "July 2018 – Present (as listed in CV)", place: "Delhi, India", description: "Taught computer science concepts, supported student training and developed programming skills in Python, Java and HTML." },
+    { role: "Freelance Developer", organisation: "Freelance", period: "July 2018 – Present", place: "Delhi, India", description: "Working with users and project teams to understand requirements, develop applications and deliver software solutions." },
+    { role: "Computer Science Educator", organisation: "Freelance", period: "July 2018 – Present", place: "Delhi, India", description: "Teaching computer science concepts, supporting student training and developing programming skills in Python, Java and other web technologies." },
+    { role: "Volunteer", organisation: "Robin Hood Army", period: "2018 – Present", place: "Meerut, India", description: "Helping the learners from unprivileged areas and feeding the hungry citizens." },
     { role: "Associate Technical Consultant", organisation: "KPIT Technologies Ltd.", period: "June 2015 – July 2018", place: "Noida, Uttar Pradesh, India", description: "Contributed to B2B and B2C e-commerce solutions, coordinated with project teams and trained colleagues on SAP Hybris technologies." },
     { role: "Assistant Professor | Software Developer", organisation: "Vidya College of Engineering", period: "August 2011 – June 2015", place: "Meerut, Uttar Pradesh, India", description: "Taught and mentored students, guided computer science projects and developed/monitored an ERP system serving 3,000+ students and 150+ faculty members." }
   ],
@@ -31,11 +32,17 @@ const portfolioData = {
     { qualification: "B.Tech in Computer Science and Engineering", institution: "Uttar Pradesh Technical University", period: "2007 – 2011", detail: "First Division" }
   ],
   publications: [
-    { title: "Machine Learning based Comprehensive Analysis of COVID-19 and its Vaccination in India", journal: "Indian Journal of Natural Sciences", date: "June 2023", doi: "" },
-    { title: "Impact of Mindfulness: A Perspective of Teachers of DoE", journal: "Malaysian Mental Health Journal", date: "January 2023", doi: "" },
-    { title: "Forecasting of COVID-19 Cases using SARIMA Model in India", journal: "Solid State Technology", date: "September 2020", doi: "" },
-    { title: "Verification of Biometric Traits Using Deep Learning", journal: "International Journal of Innovative Technology and Exploring Engineering (IJITEE)", date: "January 2019", doi: "" },
-    { title: "A Comparative Study of B2C and B2B e-Commerce Development Platforms", journal: "IJCA", date: "April 2018", doi: "" }
+    { title: "Predictive Health with AI: A Comparative Evaluation of ChatGPT and Google Gemini for Diagnostic Decision-Making Using Patient Test Data", journal: "Nova Publishers", date: "June 2026", doi: "https://novapublishers.com/shop/the-10th-international-conference-on-research-innovations-trends-in-computational-science/" },
+    { title: "Interpretable Deep Learning for Fabric Defect Detection and Quality Assurance", journal: "IEEE Xplore", date: "April 2026", doi: "https://ieeexplore.ieee.org/document/11468933" },
+    { title: "Transformation of the Traditional Classroom to Artificial Intelligence-Enabled 21st Century Classrooms in India: A Comprehensive Review", journal: "IGI Global", date: "Mar 2026", doi: "https://www.igi-global.com/chapter/transformation-of-the-traditional-classroom-to-artificial-intelligence-enabled-21st-century-classrooms-in-india/406152" },
+    { title: "Prompt Engineering based Biometric Identification using Different Biometric Traits", journal: "AIP", date: "Oct 2025", doi: "https://pubs.aip.org/aip/acp/article-abstract/3335/1/030014/3366332/Prompt-engineering-based-biometric-identification" },
+    { title: "Predictive Trend Analysis in Fashion: Leveraging Machine Learning for Forecasting Styles and Consumer Preferences", journal: "IEEE Xplore", date: "May 2025", doi: "https://ieeexplore.ieee.org/document/10991057" },
+    { title: "Technologies for Quality and Sustainable Online Education in Rural India: A Comprehensive Review", journal: "IEEE Xplore", date: "Oct 2024", doi: "https://ieeexplore.ieee.org/document/10772876" },
+    { title: "Machine Learning based Comprehensive Analysis of COVID-19 and its Vaccination in India", journal: "Indian Journal of Natural Sciences", date: "June 2023", doi: "https://www.tnsroindia.org.in/JOURNAL/issue78/ISSUE%2078%20JUNE%202023%20-%20FULL%20TEXT%20PART%2002.pdf" },
+    { title: "Impact of Mindfulness: A Perspective of Teachers of DoE", journal: "Malaysian Mental Health Journal", date: "January 2023", doi: "https://mmhj.com.my/archives/1mmhj2023/1mmhj2023-16-25.pdf" },
+    { title: "Forecasting of COVID-19 Cases using SARIMA Model in India", journal: "Solid State Technology", date: "September 2020", doi: "https://solidstatetechnology.us/index.php/JSST/article/view/2445" },
+    { title: "Verification of Biometric Traits Using Deep Learning", journal: "International Journal of Innovative Technology and Exploring Engineering (IJITEE)", date: "January 2019", doi: "https://www.ijitee.org/wp-content/uploads/papers/v8i10S/J108308810S19.pdf" },
+    { title: "A Comparative Study of B2C and B2B e-Commerce Development Platforms", journal: "IJCA", date: "April 2018", doi: "https://www.ijcaonline.org/proceedings/icrdsthm2017/number1/29312-7012/" }
   ],
   featuredProject: {
     title: "DOE Examination Result Analysis",
@@ -49,13 +56,14 @@ const portfolioData = {
     { title: "E-commerce development projects", period: "2015 – 2018", description: "Contributed to B2B/B2C e-commerce solutions for clients including Flexsteel, Spectrum Brands, Karma US Motors and Ivoclar Vivadent using SAP Hybris." }
   ],
   certifications: [
-    { title: "SEL for Teachers", provider: "UNESCO MGIEP" },
-    { title: "SEL for Classrooms", provider: "UNESCO MGIEP" },
-    { title: "Facilitator for SEL for Schools", provider: "UNESCO MGIEP" },
+    { title: "Generative AI for Educator Certificate", provider: "Google" },
+    { title: "AI for Educators", provider: "IITM Pravartak — SWAYAM Plus" },
     { title: "Constructive Teaching and Learning with Technology (CTLT) — Part 1", provider: "TISS — Centre of Excellence in Teacher Education" },
     { title: "Computer Science Teacher", provider: "Centre for Teacher Accreditation (CENTA)" },
     { title: "Teaching Programming to Young Learners", provider: "OpenSAP — SAP" },
-    { title: "AI for Educators", provider: "IITM Pravartak — SWAYAM Plus (add completion date/details)" },
+    { title: "SEL for Teachers", provider: "UNESCO MGIEP" },
+    { title: "SEL for Classrooms", provider: "UNESCO MGIEP" },
+    { title: "Facilitator for SEL for Schools", provider: "UNESCO MGIEP" },
     { title: "Python, Data Science and Machine Learning courses", provider: "Udemy — add individual course details if desired" }
   ],
   skillGroups: [
