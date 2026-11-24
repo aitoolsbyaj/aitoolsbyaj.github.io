@@ -47,9 +47,47 @@ const fbody=make("div");fbody.append(make("h3","",safe(fp.title)));fbody.append(
 const fLink=make("a","btn",fp.url?"Launch application ↗":"Add app URL to data.js");
 if(fp.url){fLink.href=fp.url;fLink.target="_blank";fLink.rel="noopener";}else{fLink.href="#contact";fLink.classList.add("disabled");fLink.setAttribute("aria-label","Application link not configured yet");}
 featured.append(fbody,fLink);el("featuredProject").append(featured);
-d.projects.forEach(item=>{
-  const card=make("article","info-card");card.append(make("div","card-icon","↗"));card.append(make("h3","",safe(item.title)));
-  card.append(make("div","card-meta",safe(item.period)));card.append(make("p","",safe(item.description)));el("projectList").append(card);
+
+d.projects.forEach(item => {const card = make("article", "info-card");
+  // Project icon
+  card.append(make("div", "card-icon", "↗"));
+  // Project title
+  card.append(make("h3", "", safe(item.title)));
+  // Category and duration
+  const meta = [item.category, item.period].filter(Boolean).map(safe);
+  if (meta.length) {
+    card.append(make("div", "card-meta", meta.join(" · ")));
+  }
+  // Project description
+  card.append(make("p", "", safe(item.description)));
+  // Technology tags
+  if (Array.isArray(item.technologies) && item.technologies.length) {
+    const techContainer = make("div", "project-technologies");
+    item.technologies.forEach(technology => {
+      techContainer.append(make("span", "tag", safe(technology)));
+    });
+    card.append(techContainer);
+  }
+  // Project links
+  const links = make("div", "project-links");
+  if (item.url) {
+    const demo = make("a", "btn", "Live Demo ↗");
+    demo.href = item.url;
+    demo.target = "_blank";
+    demo.rel = "noopener noreferrer";
+    links.append(demo);
+  }
+  if (item.github) {
+    const repo = make("a", "btn", "GitHub Repository ↗");
+    repo.href = item.github;
+    repo.target = "_blank";
+    repo.rel = "noopener noreferrer";
+    links.append(repo);
+  }
+  if (links.children.length) {
+    card.append(links);
+  }
+  el("projectList").append(card);
 });
 d.certifications.forEach(item=>{
   const card=make("article","info-card");card.append(make("div","card-icon","✦"));card.append(make("h3","",safe(item.title)));card.append(make("div","card-meta",safe(item.provider)));el("certificationList").append(card);
